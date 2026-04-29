@@ -31,6 +31,10 @@ func AuthenticateByDN(config *Config, userDN, password string) (bool, error) {
 	return conn.Bind(userDN, password)
 }
 
+func EscapeDN(dn string) string {
+	return ldap.EscapeDN(dn)
+}
+
 // AuthenticateExtended checks if the given credentials are valid, or returns an error if one occurred.
 // username may be either the sAMAccountName or the userPrincipalName.
 // entry is the *ldap.Entry that holds the DN and any request attributes of the user.
