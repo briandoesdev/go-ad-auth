@@ -1,9 +1,17 @@
-module github.com/korylprince/go-ad-auth/v3
+module github.com/briandoesdev/go-ad-auth/v3
 
-go 1.13
+go 1.25.0
 
 require (
-	github.com/go-asn1-ber/asn1-ber v1.4.1 // indirect
-	github.com/go-ldap/ldap/v3 v3.1.7
-	golang.org/x/text v0.3.2
+	github.com/go-ldap/ldap/v3 v3.4.13
+	github.com/korylprince/go-ad-auth/v3 v3.3.0
+	golang.org/x/text v0.36.0
+)
+
+require (
+	github.com/Azure/go-ntlmssp v0.1.0 // indirect
+	github.com/go-asn1-ber/asn1-ber v1.5.8-0.20250403174932-29230038a667 // indirect
+	github.com/google/uuid v1.6.0 // indirect
+	golang.org/x/crypto v0.49.0 // indirect
+	golang.org/x/net v0.52.0 // indirect
 )
