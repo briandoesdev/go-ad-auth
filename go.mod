@@ -4,7 +4,6 @@ go 1.25.0
 
 require (
 	github.com/go-ldap/ldap/v3 v3.4.13
-	github.com/korylprince/go-ad-auth/v3 v3.3.0
 	golang.org/x/text v0.36.0
 )
 
